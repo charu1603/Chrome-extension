@@ -1,7 +1,68 @@
-.logo-img{
-    height: 200px;
-    width: 200px;
-}
 body{
-    width: 720px;
+    width: 500px;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+.section{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+   
+}
+.left-content{
+    width: 20%;
+    border-right: 1.5px solid darkgreen;
+    padding: 5px;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+   
+}
+
+.right-content .heading{
+font-size:medium;
+}
+.heading span{
+    background-color: darkgreen;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+}
+.logo-img{
+    height: 100px;
+    width: 100px;
+}
+.logo-text{
+    text-align: center;
+color: darkgreen;
+font-weight: 900;
+font-size: 1.2rem;
+}
+.today{
+    padding-top: 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+#today-carbon{
+    background-color: darkgreen;
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    border-radius: 5px;
+    
+}
+.footer{
+    background-color: darkgreen;
+    width: 100%;
+    color: white;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
 }
