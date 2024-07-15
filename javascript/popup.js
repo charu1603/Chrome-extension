@@ -93,8 +93,7 @@ function renderPage() {
 
         var carMiles = document.getElementById('car-miles');
         var treesNeeded = document.getElementById('trees');
-        carMiles.innerHTML = "🚗 That's equivalent to driving " + milesPerYear.toFixed(0) + " miles in a car.";
-        treesNeeded.innerHTML = "🌳 You need to plant " + (year / trees).toFixed(0) + " trees to offset this amount.";
+      
     }
 }
 
