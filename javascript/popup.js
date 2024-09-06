@@ -8,20 +8,18 @@ chrome.tabs.getSelected(null, function (tab) {
 });
 
 function formatCarbonWeight(value) {
-    var suffix = "g";
-    if (value >= 1000000000) {
-        value = value / 1000000000;
-        suffix = "mmt";
-    } else if (value >= 1000000) {
-        value = value / 1000000;
-        suffix = "mt";
-    } else if (value >= 1000) {
-        value = value / 1000;
-        suffix = "kg";
+    const units = ["g", "kg", "mt", "mmt"];
+    let index = 0;
+
+    while (value >= 1000 && index < units.length - 1) {
+        value /= 1000;
+        index++;
     }
-    value = value % 1 == 0 ? value : value.toFixed(1);
-    return value + suffix;
+
+    value = value % 1 === 0 ? value : value.toFixed(1);
+    return value + units[index];
 }
+
 
 function renderPage() {
     // Get today's carbon count and display it
