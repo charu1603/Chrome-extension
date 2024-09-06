@@ -1,6 +1,6 @@
 1) Clone the Repo
 ```
-git clone https://github.com/charu1603/Echometer.git
+git clone https://github.com/charu1603/Chrome-extension.git
 ```
 2) Enable Developer Mode from chrome:\\extension.
 
